@@ -25,7 +25,7 @@ const Doctors_region = () => {
                 </ul>
                 <div className={styles.divBars}>
                     <p>( ) Outros</p>
-                    <div className={styles.bar}></div>
+                    <div className={styles.outros_bar}></div>
                 </div>
             </div>
 
@@ -95,7 +95,7 @@ const Doctors_region = () => {
             <div className={styles.div_outros}>
                 <div className={styles.divBars}>
                     <h1>OUTROS:</h1>
-                    <div className={styles.bar}></div>
+                    <div className={styles.outros_bar}></div>
                 </div>
             </div>
 

@@ -1,10 +1,7 @@
 .containerDoutor {
-    margin: 0 4rem;
-    margin-top: 3rem;
-    padding: 1rem;
-    width: 80%;
+    width: 19cm;
     font-family: Arial;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
 }
 
 .containerDoutor p {
@@ -13,9 +10,15 @@
 }
 
 .containerDoutor h1 {
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
+.outros_bar {
+    width: 30%;
+    height: auto;
+    border-bottom: 0.05rem solid black;
+    margin-top: 1rem;
+}
 
 .divBars {
     width: 100%;
@@ -23,57 +26,8 @@
     align-items: center;
     outline: none;
     white-space: nowrap;
-}
-
-.bar {
-    width: 100%;
-    height: auto;
-    padding-left: 0;
-    border-bottom: 0.1rem solid black;
-    margin-top: 1.5rem;
-    position: relative;
-}
-
-.queixas {
-    width: 50%;
-    font-size: 1.5rem;
-}
-
-.list_queixas {
-    list-style: none;
-    width: 100%;
     padding: 0;
-}
-
-.list_queixas li {
-    display: flex;
-    justify-content: space-between;
-
-}
-
-.list_queixas li p {
-    margin: 0;
-    padding: 0;
-}
-
-.REF {
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
-}
-
-
-.list_REF {
-    list-style: none;
-    font-size: 1.5rem;
-    padding: 0;
-
-}
-
-.list_REF li {
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
+    /* Removido padding lateral exagerado */
 }
 
 .divBars1 {
@@ -95,64 +49,88 @@
 
 }
 
-.BIO {
+.bar {
     width: 100%;
+    height: auto;
+    border-bottom: 0.05rem solid black;
+    margin-top: 1rem;
 }
 
-.BIOs {
-    font-size: 1.5rem;
+.queixas,
+.BIOs,
+.list_REF,
+.div_list ul,
+.me,
+.conduta,
+.obs {
+    font-size: 0.8rem;
 }
 
-.list_bio {
+.list_queixas,
+.list_REF,
+.list_bio,
+.div_list ul {
     list-style: none;
+    width: 100%;
     padding: 0;
+}
+
+
+.div_list ul li {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
 }
 
 .list_bio li {
     display: flex;
     justify-content: space-between;
+    width: 90%;
+}
+
+.list_REF li {
+    display: flex;
+    justify-content: space-between;
     width: 80%;
 }
 
-.div_outros {
-    width: 40%;
-    margin-top: 2rem;
-}
-
-.div_list ul {
-    list-style: none;
-    font-size: 1.5rem;
-    padding: 0;
-}
-
-.div_list ul li {
+.list_queixas li {
     display: flex;
     justify-content: space-between;
+    width: 50%;
 }
 
-.me {
+.REF {
+    display: flex;
+    justify-content: space-between;
     width: 100%;
-    font-size: 1.5rem;
-    display: flex;
-    justify-content: space-between;
 }
 
+.BIO {
+    width: 100%;
+}
+
+.div_outros {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.me,
 .conduta {
     width: 100%;
-    font-size: 1.5rem;
     display: flex;
     justify-content: space-between;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .obs {
     width: 100%;
-    font-size: 1.5rem;
     display: flex;
-    margin-top: 2rem;
-        flex-direction: column;
+    flex-direction: column;
     align-items: flex-end;
+    margin-top: 1rem;
 }
+
 .dr {
-    font-size: 1rem;
+    font-size: 0.9rem;
 }

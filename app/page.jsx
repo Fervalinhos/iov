@@ -5,6 +5,7 @@ import { useState, useEffect, useContext } from "react";
 import Records from "@/models/records.js";
 import styles from "./page.module.css";
 import { usePDF } from 'react-to-pdf';
+import generatePDF, { Resolution, Margin } from 'react-to-pdf';
 
 const registros = new Records();
 
@@ -14,6 +15,7 @@ const registros = new Records();
 function App() {
 
   const { toPDF, targetRef } = usePDF({ filename: 'IOV.pdf' });
+  
 
   const [HC, setHC] = useState("");
   const [HM, setHM] = useState("");
