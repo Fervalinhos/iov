@@ -1,11 +1,14 @@
 {
+  "homepage": "https://Fervalinhos.github.io/iov",
   "name": "iov",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "next": "15.5.0",
@@ -13,5 +16,8 @@
     "react-dom": "19.1.0",
     "react-to-pdf": "^2.0.1",
     "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
