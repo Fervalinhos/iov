@@ -1,3 +1,4 @@
+"use client"
 import styles from "./page.module.css";
 const Inputs = ({ type, text, value, onChange, styleInput, maxLength }) => {
     return (
