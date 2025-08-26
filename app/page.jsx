@@ -63,7 +63,6 @@ function App() {
           setEndereco(`${data.logradouro || ""}, ${data.bairro || ""}, ${data.localidade || ""} - ${data.uf || ""}`);
         }
       } catch (error) {
-        // erro ao buscar endereço
       }
     }
     buscarEndereco(CEP);
