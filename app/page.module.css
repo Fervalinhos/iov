@@ -103,13 +103,12 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 20%
+    width: 20%;
 }
 
 .inputDataNascimento input[type="date"] {
     background: transparent;
     outline: none;
-    font-size: 1rem;
     font-family: Arial, sans-serif;
     appearance: none;
     /* padrão */
@@ -131,7 +130,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 65%;
+    width: 60%;
 }
 
 .inputEmail {
@@ -151,6 +150,6 @@
 .bar {
     border: 0.1rem solid black;
     margin: 0 4rem;
-    margin-top: 1rem;
+    margin-top: 0.7rem;
     width: 90%
 }
