@@ -1,6 +1,6 @@
 "use client"
 import Inputs from "./components/inputs/page.jsx";
-import Doctors_region from "./components/doctor's_region/page.jsx";
+import Doctors_region from "./components/doctors_region/page.jsx";
 import { useState, useEffect, useContext } from "react";
 import Records from "@/models/records.js";
 import styles from "./page.module.css";
