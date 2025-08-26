@@ -1,0 +1,158 @@
+.containerDoutor {
+    margin: 0 4rem;
+    margin-top: 3rem;
+    padding: 1rem;
+    width: 80%;
+    font-family: Arial;
+    font-size: 0.7rem;
+}
+
+.containerDoutor p {
+    margin: 0;
+    padding: 0;
+}
+
+.containerDoutor h1 {
+    font-size: 1.5rem;
+}
+
+
+.divBars {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    outline: none;
+    white-space: nowrap;
+}
+
+.bar {
+    width: 100%;
+    height: auto;
+    padding-left: 0;
+    border-bottom: 0.1rem solid black;
+    margin-top: 1.5rem;
+    position: relative;
+}
+
+.queixas {
+    width: 50%;
+    font-size: 1.5rem;
+}
+
+.list_queixas {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+}
+
+.list_queixas li {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.list_queixas li p {
+    margin: 0;
+    padding: 0;
+}
+
+.REF {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+
+.list_REF {
+    list-style: none;
+    font-size: 1.5rem;
+    padding: 0;
+
+}
+
+.list_REF li {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.divBars1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    outline: none;
+    white-space: nowrap;
+    padding-right: 7rem;
+}
+
+.divBars2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    outline: none;
+    white-space: nowrap;
+    padding-left: 7rem;
+
+}
+
+.BIO {
+    width: 100%;
+}
+
+.BIOs {
+    font-size: 1.5rem;
+}
+
+.list_bio {
+    list-style: none;
+    padding: 0;
+}
+
+.list_bio li {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.div_outros {
+    width: 40%;
+    margin-top: 2rem;
+}
+
+.div_list ul {
+    list-style: none;
+    font-size: 1.5rem;
+    padding: 0;
+}
+
+.div_list ul li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.me {
+    width: 100%;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.conduta {
+    width: 100%;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.obs {
+    width: 100%;
+    font-size: 1.5rem;
+    display: flex;
+    margin-top: 2rem;
+        flex-direction: column;
+    align-items: flex-end;
+}
+.dr {
+    font-size: 1rem;
+}
