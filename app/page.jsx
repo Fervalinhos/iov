@@ -121,20 +121,20 @@ function App() {
         <div className={styles.inputContainer}>
           <Inputs type="text" text="HC" value={HC} onChange={setHC} styleInput={styles.inputHC_HM} />
           <Inputs type="text" text="HM" value={HM} onChange={setHM} styleInput={styles.inputHC_HM} />
-          <Inputs type="text" text="Convenio" value={convenio} onChange={setConvenio} styleInput={styles.inputConvenio} />
+          <Inputs type="text" text="CONVÊNIO" value={convenio} onChange={setConvenio} styleInput={styles.inputConvenio} />
           <Inputs type="text" text="N°" value={numero} onChange={setNumero} styleInput={styles.inputNumero} />
-          <Inputs type="date" text="Data" value={data} onChange={setData} styleInput={styles.inputData} />
-          <Inputs type="text" text="Paciente" value={paciente} onChange={setPaciente} styleInput={styles.inputPaciente} />
+          <Inputs type="date" text="DATA" value={data} onChange={setData} styleInput={styles.inputData} />
+          <Inputs type="text" text="PACIENTE" value={paciente} onChange={setPaciente} styleInput={styles.inputPaciente} />
           <Inputs type="text" text="CPF" value={CPF} onChange={setCPF} styleInput={styles.inputCPF_RG_FONE} maxLength={11} />
           <Inputs type="text" text="RG" value={RG} onChange={setRG} styleInput={styles.inputCPF_RG_FONE} />
           <Inputs type="text" text="FONE" value={FONE} onChange={setFONE} styleInput={styles.inputCPF_RG_FONE} />
           <Inputs type="text" text="CEP" value={CEP} onChange={setCEP} styleInput={styles.inputCep} maxLength={9} />
-          <Inputs type="text" text="Endereco" value={endereco} onChange={setEndereco} styleInput={styles.inputEndereco} />
-          <Inputs type="date" text="Data de Nasc" value={dataNascimento} onChange={setDataNascimento} styleInput={styles.inputDataNascimento} />
-          <Inputs type="number" text="Idade" value={idade} onChange={setIdade} styleInput={styles.inputIdade} />
-          <Inputs type="text" text="Profissao" value={profissao} onChange={setProfissao} styleInput={styles.inputProfissao} />
-          <Inputs type="text" text="Email" value={email} onChange={setEmail} styleInput={styles.inputEmail} />
-          <Inputs type="text" text="Indicacao" value={indicacao} onChange={setIndicacao} styleInput={styles.inputIndicacao} />
+          <Inputs type="text" text="ENDEREÇO" value={endereco} onChange={setEndereco} styleInput={styles.inputEndereco} />
+          <Inputs type="date" text="DATA NASC" value={dataNascimento} onChange={setDataNascimento} styleInput={styles.inputDataNascimento} />
+          <Inputs type="number" text="IDADE" value={idade} onChange={setIdade} styleInput={styles.inputIdade} />
+          <Inputs type="text" text="PROFISSÃO" value={profissao} onChange={setProfissao} styleInput={styles.inputProfissao} />
+          <Inputs type="text" text="E-mail" value={email} onChange={setEmail} styleInput={styles.inputEmail} />
+          <Inputs type="text" text="Indicação" value={indicacao} onChange={setIndicacao} styleInput={styles.inputIndicacao} />
         </div>
         <h1 className={styles.title}>ANAMNSE</h1>
         <div className={styles.bar}></div>

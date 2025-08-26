@@ -138,7 +138,7 @@ const Doctors_region = () => {
                 </div>
                 <div className={styles.dr}>
                     <p>DR. ROBERTO NOVAES CAMPELLO HOROVITZ</p>
-                    <p><strong>CRM</strong>134017-SP</p>
+                    <p><strong>CRM</strong>:134017-SP</p>
                 </div>
             </div>
 
