@@ -34,7 +34,7 @@ const Doctors_region = () => {
 
                 <div className={styles.REF}>
                     <h1>REFRAÇÃO (RX)</h1>
-                    <h1>LENSO</h1>
+                    <h1 className={styles.lenso}>LENSO</h1>
                 </div>
                 <div className={styles.containerListREF}>
 
