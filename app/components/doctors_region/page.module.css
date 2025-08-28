@@ -1,7 +1,7 @@
 .containerDoutor {
     width: 19cm;
     font-family: Arial;
-    font-size: 0.6rem;
+    font-size: 2rem;
     margin-top: 1.5rem
 }
 
@@ -68,7 +68,8 @@
 .me,
 .conduta,
 .obs {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
 }
 
 .list_queixas,
@@ -126,6 +127,7 @@
     display: flex;
     justify-content: space-between;
     margin-top: 1rem;
+    font-size: 0.8rem;
 }
 
 .obs {

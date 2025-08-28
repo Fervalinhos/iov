@@ -36,8 +36,7 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 1cm auto 0 auto;
-    padding: 0.5cm;
+    margin: 1cm;
     box-sizing: border-box;
     font-size: 0.7rem;
 }
@@ -47,21 +46,23 @@
     flex-direction: row;
     align-items: center;
     width: 13%;
+    margin: 0.5rem 0;
 }
 
 .inputConvenio {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 17%;
+    width: 29%;
+    margin: 0.5rem 0;
 }
 
 .inputNumero {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 42%;
-
+    width: 30%;
+    margin: 0.5rem 0;
 }
 
 .inputData {
@@ -69,6 +70,7 @@
     flex-direction: row;
     align-items: center;
     width: 15%;
+    margin: 0.5rem 0;
 }
 
 .inputPaciente {
@@ -76,6 +78,7 @@
     flex-direction: row;
     align-items: center;
     width: 100%;
+    margin: 0.5rem 0;
 }
 
 .inputCPF_RG_FONE {
@@ -83,6 +86,7 @@
     flex-direction: row;
     align-items: center;
     width: 33%;
+    margin: 0.5rem 0;
 }
 
 .inputCep {
@@ -90,6 +94,7 @@
     flex-direction: row;
     align-items: center;
     width: 20%;
+    margin: 0.5rem 0;
 }
 
 .inputEndereco {
@@ -97,13 +102,15 @@
     flex-direction: row;
     align-items: center;
     width: 80%;
+    margin: 0.5rem 0;
 }
 
 .inputDataNascimento {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 20%;
+    width: 30%;
+    margin: 0.5rem 0;
 }
 
 .inputDataNascimento input[type="date"] {
@@ -124,13 +131,15 @@
     flex-direction: row;
     align-items: center;
     width: 15%;
+    margin: 0.5rem 0;
 }
 
 .inputProfissao {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 60%;
+    width: 50%;
+    margin: 0.5rem 0;
 }
 
 .inputEmail {
@@ -138,6 +147,7 @@
     flex-direction: row;
     align-items: center;
     width: 60%;
+    margin: 0.5rem 0;
 }
 
 .inputIndicacao {
@@ -145,6 +155,7 @@
     flex-direction: row;
     align-items: center;
     width: 40%;
+    margin: 0.5rem 0;
 }
 
 .bar {
