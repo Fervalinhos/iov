@@ -6,6 +6,7 @@ import Records from "@/models/records.js";
 import styles from "./page.module.css";
 import { usePDF } from 'react-to-pdf';
 import generatePDF, { Resolution, Margin } from 'react-to-pdf';
+import { IoMdDownload } from "react-icons/io";
 
 const registros = new Records();
 
@@ -15,7 +16,7 @@ const registros = new Records();
 function App() {
 
   const { toPDF, targetRef } = usePDF({ filename: 'IOV.pdf' });
-  
+
 
   const [HC, setHC] = useState("");
   const [HM, setHM] = useState("");
@@ -116,32 +117,38 @@ function App() {
 
   return (
     <main className={styles.mainContainer}>
-      <div className={styles.formContainer} ref={targetRef}>
-        <h1 className={styles.title}>IOV</h1>
-        <h1 className={styles.title}>INSTITUTO OFTALMOLOGICO DE VALINHOS</h1>
-        <div className={styles.inputContainer}>
-          <Inputs type="text" text="HC" value={HC} onChange={setHC} styleInput={styles.inputHC_HM} />
-          <Inputs type="text" text="HM" value={HM} onChange={setHM} styleInput={styles.inputHC_HM} />
-          <Inputs type="text" text="CONVÊNIO" value={convenio} onChange={setConvenio} styleInput={styles.inputConvenio} />
-          <Inputs type="text" text="N°" value={numero} onChange={setNumero} styleInput={styles.inputNumero} />
-          <Inputs type="date" text="DATA" value={data} onChange={setData} styleInput={styles.inputData} />
-          <Inputs type="text" text="PACIENTE" value={paciente} onChange={setPaciente} styleInput={styles.inputPaciente} />
-          <Inputs type="text" text="CPF" value={CPF} onChange={setCPF} styleInput={styles.inputCPF_RG_FONE} maxLength={11} />
-          <Inputs type="text" text="RG" value={RG} onChange={setRG} styleInput={styles.inputCPF_RG_FONE} />
-          <Inputs type="text" text="FONE" value={FONE} onChange={setFONE} styleInput={styles.inputCPF_RG_FONE} />
-          <Inputs type="text" text="CEP" value={CEP} onChange={setCEP} styleInput={styles.inputCep} maxLength={9} />
-          <Inputs type="text" text="ENDEREÇO" value={endereco} onChange={setEndereco} styleInput={styles.inputEndereco} />
-          <Inputs type="date" text="DATA NASC" value={dataNascimento} onChange={setDataNascimento} styleInput={styles.inputDataNascimento} />
-          <Inputs type="number" text="IDADE" value={idade} onChange={setIdade} styleInput={styles.inputIdade} />
-          <Inputs type="text" text="PROFISSÃO" value={profissao} onChange={setProfissao} styleInput={styles.inputProfissao} />
-          <Inputs type="text" text="E-mail" value={email} onChange={setEmail} styleInput={styles.inputEmail} />
-          <Inputs type="text" text="Indicação" value={indicacao} onChange={setIndicacao} styleInput={styles.inputIndicacao} />
+      <div className={styles.container_shadow}>
+        <div className={styles.formContainer} ref={targetRef}>
+          <h1 className={styles.title}>IOV</h1>
+          <h1 className={styles.title}>INSTITUTO OFTALMOLOGICO DE VALINHOS</h1>
+          <div className={styles.inputContainer}>
+            <Inputs type="text" text="HC" value={HC} onChange={setHC} styleInput={styles.inputHC_HM} />
+            <Inputs type="text" text="HM" value={HM} onChange={setHM} styleInput={styles.inputHC_HM} />
+            <Inputs type="text" text="CONVÊNIO" value={convenio} onChange={setConvenio} styleInput={styles.inputConvenio} />
+            <Inputs type="text" text="N°" value={numero} onChange={setNumero} styleInput={styles.inputNumero} />
+            <Inputs type="date" text="DATA" value={data} onChange={setData} styleInput={styles.inputData} />
+            <Inputs type="text" text="PACIENTE" value={paciente} onChange={setPaciente} styleInput={styles.inputPaciente} />
+            <Inputs type="text" text="CPF" value={CPF} onChange={setCPF} styleInput={styles.inputCPF_RG_FONE} maxLength={11} />
+            <Inputs type="text" text="RG" value={RG} onChange={setRG} styleInput={styles.inputCPF_RG_FONE} />
+            <Inputs type="text" text="FONE" value={FONE} onChange={setFONE} styleInput={styles.inputCPF_RG_FONE} />
+            <Inputs type="text" text="CEP" value={CEP} onChange={setCEP} styleInput={styles.inputCep} maxLength={9} />
+            <Inputs type="text" text="ENDEREÇO" value={endereco} onChange={setEndereco} styleInput={styles.inputEndereco} />
+            <Inputs type="date" text="DATA NASC" value={dataNascimento} onChange={setDataNascimento} styleInput={styles.inputDataNascimento} />
+            <Inputs type="number" text="IDADE" value={idade} onChange={setIdade} styleInput={styles.inputIdade} />
+            <Inputs type="text" text="PROFISSÃO" value={profissao} onChange={setProfissao} styleInput={styles.inputProfissao} />
+            <Inputs type="text" text="E-mail" value={email} onChange={setEmail} styleInput={styles.inputEmail} />
+            <Inputs type="text" text="Indicação" value={indicacao} onChange={setIndicacao} styleInput={styles.inputIndicacao} />
+          </div>
+          <h1 className={styles.title}>ANAMNSE</h1>
+          <div className={styles.bar}></div>
+          <Doctors_region />
         </div>
-        <h1 className={styles.title}>ANAMNSE</h1>
-        <div className={styles.bar}></div>
-        <Doctors_region />
       </div>
-      <button onClick={() => toPDF()}>Download PDF</button>
+
+      <button className={styles.button} onClick={() => toPDF()}>
+        <IoMdDownload className={styles.icon_bnt}/>
+        <span class="button-content">Download PDF</span>
+      </button>
     </main>
   );
 }
