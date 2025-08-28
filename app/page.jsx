@@ -139,7 +139,7 @@ function App() {
             <Inputs type="text" text="E-mail" value={email} onChange={setEmail} styleInput={styles.inputEmail} />
             <Inputs type="text" text="Indicação" value={indicacao} onChange={setIndicacao} styleInput={styles.inputIndicacao} />
           </div>
-          <h1 className={styles.title}>ANAMNSE</h1>
+          <h1 className={styles.title}>ANAMNESE</h1>
           <div className={styles.bar}></div>
           <Doctors_region />
         </div>

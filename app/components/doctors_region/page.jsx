@@ -4,7 +4,7 @@ const Doctors_region = () => {
     return (
         <div className={styles.containerDoutor}>
             <div className={styles.divBars}>
-                <h1>ANTECEDETES PESSOAIS:</h1>
+                <h1>ANTECEDENTES PESSOAIS:</h1>
                 <div className={styles.bar}></div>
             </div>
             <div className={styles.main_container}>
