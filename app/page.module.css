@@ -219,3 +219,16 @@
 
     transition: all 0.475s;
 }
+
+.textOnly {
+    font-size: 0.9rem;
+    border-bottom: 0.05rem solid black;
+    white-space: nowrap;
+    width: 100%;
+
+}
+
+.label {
+    font-size: 0.9rem;
+    white-space: nowrap;
+}

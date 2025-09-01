@@ -35,6 +35,8 @@ function App() {
   const [email, setEmail] = useState("");
   const [indicacao, setIndicacao] = useState("");
 
+  const [modoPDF, setModoPDF] = useState(false);
+
 
   function calcularIdade(dataNascimento) {
     if (!dataNascimento) return "";
@@ -71,27 +73,43 @@ function App() {
     buscarEndereco(CEP);
   }, [CEP]);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+
+  function formattedDate (data) {
+    if (!data) return "";
+    const partes = data.split("-");
+    if (partes.length !== 3) return data;
+    const [ano, mes, dia] = partes;
+    return `${dia}/${mes}/${ano}`;
+  }
+
+
+  const handleSubmit = async () => {
+
+    setModoPDF(true)
 
     const newRecord = {
       HC,
       HM,
       convenio,
       numero,
-      data,
+      data: formattedDate (data),
       paciente,
       CPF,
       RG,
       FONE,
       endereco,
-      dataNascimento,
+      dataNascimento: formattedDate (dataNascimento),
       idade,
       profissao,
       email,
       indicacao
     };
 
+    await new Promise(resolve => setTimeout(resolve, 300));
+
+    await toPDF();
+
+    setModoPDF(false);
     registros.adicionarRegistro(newRecord);
     console.log(registros.listarRegistros());
     clearFields();
@@ -126,14 +144,31 @@ function App() {
             <Inputs type="text" text="HM" value={HM} onChange={setHM} styleInput={styles.inputHC_HM} />
             <Inputs type="text" text="CONVÊNIO" value={convenio} onChange={setConvenio} styleInput={styles.inputConvenio} />
             <Inputs type="text" text="N°" value={numero} onChange={setNumero} styleInput={styles.inputNumero} />
-            <Inputs type="date" text="DATA" value={data} onChange={setData} styleInput={styles.inputData} />
+            {modoPDF ? (
+              <div className={styles.inputData}>
+                <label className={styles.label}><strong>DATA:</strong></label>
+                <span className={styles.textOnly}>{formattedDate(data)}</span>
+              </div>
+            ) : (
+              <Inputs type="date" text="DATA" value={data} onChange={setData} styleInput={styles.inputData} />
+            )}
+
+
+
             <Inputs type="text" text="PACIENTE" value={paciente} onChange={setPaciente} styleInput={styles.inputPaciente} />
             <Inputs type="text" text="CPF" value={CPF} onChange={setCPF} styleInput={styles.inputCPF_RG_FONE} maxLength={11} />
             <Inputs type="text" text="RG" value={RG} onChange={setRG} styleInput={styles.inputCPF_RG_FONE} />
             <Inputs type="text" text="FONE" value={FONE} onChange={setFONE} styleInput={styles.inputCPF_RG_FONE} />
             <Inputs type="text" text="CEP" value={CEP} onChange={setCEP} styleInput={styles.inputCep} maxLength={9} />
             <Inputs type="text" text="ENDEREÇO" value={endereco} onChange={setEndereco} styleInput={styles.inputEndereco} />
-            <Inputs type="date" text="DATA NASC" value={dataNascimento} onChange={setDataNascimento} styleInput={styles.inputDataNascimento} />
+            {modoPDF ? (
+              <div className={styles.inputDataNascimento}>
+                <label className={styles.label}><strong>DATA NASC:</strong></label>
+                <span className={styles.textOnly}>{formattedDate(dataNascimento)}</span>
+              </div>
+            ) : (
+              <Inputs type="date" text="DATA NASC" value={dataNascimento} onChange={setDataNascimento} styleInput={styles.inputDataNascimento} />
+            )}
             <Inputs type="number" text="IDADE" value={idade} onChange={setIdade} styleInput={styles.inputIdade} />
             <Inputs type="text" text="PROFISSÃO" value={profissao} onChange={setProfissao} styleInput={styles.inputProfissao} />
             <Inputs type="text" text="E-mail" value={email} onChange={setEmail} styleInput={styles.inputEmail} />
@@ -145,9 +180,9 @@ function App() {
         </div>
       </div>
 
-      <button className={styles.button} onClick={() => toPDF()}>
-        <IoMdDownload className={styles.icon_bnt}/>
-        <span class="button-content">Download PDF</span>
+      <button className={styles.button} onClick={() => handleSubmit()}>
+        <IoMdDownload className={styles.icon_bnt} />
+        <span className="button-content">Download PDF</span>
       </button>
     </main>
   );
