@@ -47,13 +47,17 @@
     flex-wrap: wrap;
     margin: 1cm;
     box-sizing: border-box;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
 }
 
 .inputHC_HM {
     display: flex;
     flex-direction: row;
     align-items: center;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    padding: 0.25rem 0.3rem;
+    box-sizing: border-box;
     width: 13%;
     margin: 0.5rem 0;
 }
@@ -62,6 +66,10 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    padding: 0.25rem 0.3rem;
+    box-sizing: border-box;
     width: 29%;
     margin: 0.5rem 0;
 }
@@ -70,6 +78,10 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    padding: 0.25rem 0.3rem;
+    box-sizing: border-box;
     width: 30%;
     margin: 0.5rem 0;
 }
@@ -78,6 +90,10 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    padding: 0.25rem 0.3rem;
+    box-sizing: border-box;
     width: 15%;
     margin: 0.5rem 0;
 }
@@ -86,6 +102,10 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    padding: 0.25rem 0.3rem;
+    box-sizing: border-box;
     width: 100%;
     margin: 0.5rem 0;
 }
@@ -94,6 +114,10 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    padding: 0.25rem 0.3rem;
+    box-sizing: border-box;
     width: 33%;
     margin: 0.5rem 0;
 }
@@ -102,6 +126,10 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    padding: 0.25rem 0.3rem;
+    box-sizing: border-box;
     width: 20%;
     margin: 0.5rem 0;
 }
@@ -110,6 +138,10 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    padding: 0.25rem 0.3rem;
+    box-sizing: border-box;
     width: 80%;
     margin: 0.5rem 0;
 }
@@ -118,6 +150,10 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    padding: 0.25rem 0.3rem;
+    box-sizing: border-box;
     width: 30%;
     margin: 0.5rem 0;
 }
@@ -139,6 +175,10 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    padding: 0.25rem 0.3rem;
+    box-sizing: border-box;
     width: 15%;
     margin: 0.5rem 0;
 }
@@ -147,6 +187,10 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    padding: 0.25rem 0.3rem;
+    box-sizing: border-box;
     width: 50%;
     margin: 0.5rem 0;
 }
@@ -155,6 +199,10 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    padding: 0.25rem 0.3rem;
+    box-sizing: border-box;
     width: 60%;
     margin: 0.5rem 0;
 }
@@ -163,6 +211,10 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    padding: 0.25rem 0.3rem;
+    box-sizing: border-box;
     width: 40%;
     margin: 0.5rem 0;
 }

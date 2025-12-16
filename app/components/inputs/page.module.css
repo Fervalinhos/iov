@@ -1,13 +1,13 @@
 .inputContainer {
     font-size: 0.9rem;
+    line-height: 1.4;
+    padding: 0.3rem 0;
     border: none;
-    border-bottom: 0.05rem solid black;
-    white-space: nowrap;
+    border-bottom: 1px solid black;
     width: 100%;
     outline: none;
     appearance: none;
     -webkit-appearance: none;
-    -moz-appearance: none;
     -moz-appearance: textfield;
     cursor: text;
 }
