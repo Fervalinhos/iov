@@ -1,16 +1,20 @@
-"use client"
+"use client";
 import Inputs from "./components/inputs/page.jsx";
 import Doctors_region from "./components/doctors_region/page.jsx";
-import { useState, useEffect, useContext } from "react";
+import { useState, useEffect, useContext, useRef } from "react";
 import Records from "@/models/records.js";
 import styles from "./page.module.css";
 import { usePDF } from 'react-to-pdf';
-import generatePDF, { Resolution, Margin } from 'react-to-pdf';
 import { IoMdDownload } from "react-icons/io";
+
+import dynamic from "next/dynamic";
 
 const registros = new Records();
 
-
+const ReactToPdf = dynamic(
+  () => import("react-to-pdf"),
+  { ssr: false }
+);
 
 
 function App() {
@@ -74,7 +78,7 @@ function App() {
   }, [CEP]);
 
 
-  function formattedDate (data) {
+  function formattedDate(data) {
     if (!data) return "";
     const partes = data.split("-");
     if (partes.length !== 3) return data;
@@ -84,6 +88,8 @@ function App() {
 
 
   const handleSubmit = async () => {
+    console.log('passou aq');
+    
 
     setModoPDF(true)
 
@@ -92,13 +98,13 @@ function App() {
       HM,
       convenio,
       numero,
-      data: formattedDate (data),
+      data: formattedDate(data),
       paciente,
       CPF,
       RG,
       FONE,
       endereco,
-      dataNascimento: formattedDate (dataNascimento),
+      dataNascimento: formattedDate(dataNascimento),
       idade,
       profissao,
       email,
@@ -180,10 +186,11 @@ function App() {
         </div>
       </div>
 
-      <button className={styles.button} onClick={() => handleSubmit()}>
+      <button onClick={() => handleSubmit()}>
         <IoMdDownload className={styles.icon_bnt} />
         <span className="button-content">Download PDF</span>
       </button>
+
     </main>
   );
 }
