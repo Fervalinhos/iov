@@ -11,6 +11,7 @@
     -moz-appearance: textfield;
     cursor: text;
     position: relative;
+    padding: 0.4rem;
 }
 
 .inputContainer::-webkit-inner-spin-button {
